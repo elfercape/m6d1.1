@@ -1,0 +1,13 @@
+<body class="container bg-info">
+<div id="<%= dom_id client %> bg-info">
+  <tr class="text-danger-emphasis">
+    <th scope="row" class="bg-success"><%= client.id %></th>
+    <td class="text-danger-emphasis bg-success"><%= client.name %></td>
+    <td class="text-danger-emphasis bg-success"><%= client.age %></td>
+    <td class="text-danger-emphasis bg-success"><%= client.movies.last %></td>
+    <td class="text-danger-emphasis bg-warning"><%= link_to "Show this client", client %></td>
+    <td class="text-danger-emphasis bg-warning"><%= link_to "Edit this client", edit_client_path(client) %></td>
+    <td class="text-danger-emphasis bg-warning"><%= button_to "Destroy this client", @client, method: :delete %></td>
+  </tr>
+</div>
+</body>
