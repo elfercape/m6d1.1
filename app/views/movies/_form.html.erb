@@ -12,12 +12,12 @@
   <% end %>
 
   <div>
-    <%= form.label :name, style: "display: block" %>
+    <%= form.label :name, style: "display: block bg-info" %>
     <%= form.text_field :name  %>
   </div>
 
   <div>
-    <%= form.label :client_id, style: "display: block" %>
+    <%= form.label :client_id, style: "display: block bg-info" %>
     <%= form.select :client_id, options_for_select(@clients) %>
   </div>
 

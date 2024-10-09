@@ -1,8 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @client %>
+    <%= @client.id %> <br>
+    <%= @client.name %> <br>
+    <%= @client.age %>  <br>
+    <%= @client.movies.last %> <br>
 
-<div>
+<div class="container">
   <%= link_to "Edit this client", edit_client_path(@client) %> |
   <%= link_to "Back to clients", clients_path %>
 
